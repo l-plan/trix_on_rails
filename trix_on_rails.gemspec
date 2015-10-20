@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = TrixOnRails::VERSION
   s.authors     = ["rolf"]
   s.email       = ["rolf@l-plan.nl"]
-  s.homepage    = "https:/github.com/l-plan/trix_on_rails"
+  s.homepage    = "http://github.com/l-plan/trix_on_rails"
   s.summary     = "this gem adds basecamps's trix.js to the assets-pipeline"
   s.description = "this gem adds basecamps's trix.js to the assets-pipeline"
   s.license     = "MIT"
