@@ -1,6 +1,6 @@
 # TrixOnRails
 
-Please take a look at [https://github.com/basecamp/trix]() All credits go to the fine people of the basecamp-family.
+Please take a look at [https://github.com/basecamp/trix](https://github.com/basecamp/trix) All credits go to the fine people of the basecamp-family.
 
 This gem's only purpose is to add the trix- js and -css files to the assets-pipeline. Technically it is a plugin.
 
@@ -36,7 +36,7 @@ Or install it yourself as:
 
 ## Usage
 
-please take a look at [https://github.com/basecamp/trix]()
+please take a look at [https://github.com/basecamp/trix](https://github.com/basecamp/trix)
 
 add to application.js
 
