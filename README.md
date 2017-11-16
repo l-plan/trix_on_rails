@@ -8,8 +8,8 @@ The goal is to add some WYSIWYG-methods to my website and play along with rails5
 
 ## Dependency
 
-The Trix -project is created with ruby 2.1.2, TrixOnRails was build using ruby 2.2.2.
-This gem depends on mysql2 and rails5. Just for fun.
+The Trix -project is currently (0.11.1) created with ruby 2.3.1, TrixOnRails was build using ruby 2.3.2.
+The development- and test- environment of this gem depends on mysql2 and rails 5.1. Why? Since rails removerd the jQuery-dependency, I want to find out where this is bringing me...
 
 ## Installation
 
@@ -58,8 +58,11 @@ ___
 ## Test
 todo
 
+For now I only added a dummy-app in 'test', adding only one model ("page.rb") to experiment.
+
 TrixOnRails will use minitest. But as for now, the only thing to test is its presence 
 Run rake to start the test-suite.
+
 
 
 ## Contributing
