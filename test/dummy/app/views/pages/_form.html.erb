@@ -21,14 +21,18 @@
     <%= form.text_field :title, id: :page_title %>
   </div>
 
-  <div class="field">
-    <%= form.label :page %>
-    <%= form.text_area :page, id: :page_page %>
-  </div>
+
+
+  <%= form.hidden_field :page, id: :page_page %>
+
+
+
+
+  <trix-editor input="page_page"></trix-editor>
 
   <div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
 
-<trix-editor></trix-editor>
+
+<% end %>
