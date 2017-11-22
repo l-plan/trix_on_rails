@@ -5,7 +5,9 @@ trix-toolbar .trix-button-group button[data-trix-attribute=grey]{
 trix-toolbar .trix-button-group button[data-trix-attribute=comic] {
   font-family: "Comic Sans MS";
 }
-
+grey {
+	color: grey;	
+}
 /*trix-toolbar .trix-button-group button[data-trix-attribute=right] {
  text-align: "right";
 }

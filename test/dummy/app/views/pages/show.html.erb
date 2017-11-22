@@ -12,7 +12,8 @@
 
 <p>
   <strong>Page:</strong>
-  <%= @page.page.html_safe %>
+
+  <%= sanitize_trix @page.page%>
 
 </p>
 

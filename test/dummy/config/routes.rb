@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :pages
   # resources :uploads#, controller: 'trix/uploads'
-  scope module: :trix do
+  scope module: :trix_on_rails do
   	 resources :uploads
   end
   root :to => "pages#index"

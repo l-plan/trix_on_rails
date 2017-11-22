@@ -11,6 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require trix
-//= require trix-add
-//= require attachment
+//= require trix_on_rails/trix
+//= require trix_on_rails/trix-add
+//= require trix_on_rails/trix-attachment
