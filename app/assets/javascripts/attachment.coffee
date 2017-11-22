@@ -17,7 +17,6 @@ $ ->
     xhr = new XMLHttpRequest
 
     token = $('meta[name="csrf-token"]').attr('content')
-    # token = Rails.csrfToken()
     
     xhr.open 'POST', "/uploads.json", true
 
@@ -30,27 +29,28 @@ $ ->
 
     xhr.onload = ->
       response = JSON.parse(@responseText)
-      console.log "in onload......"
-      # console.log response.url
 
       attachment.setAttributes
-        # url: response.url
         url: response.image_url
         href: response.image_url
-        # url: '/uploads/13'
-        # href: '/uploads/13'
-        # image_id: response.image_id
-        # href: response.href
-        # path: response.url
+        upload_id: response.upload_id
+
       console.log attachment
 
     xhr.send form
 
   deleteFile = (n) ->
+    upload_id =  n.attachment.attributes.values.upload_id
+
+    token = $('meta[name="csrf-token"]').attr('content')
     $.ajax
       type: 'DELETE'
-      # url: '/images/' + n.attachment.attributes.values.image_id
-      url: '/uploads/' + n.attachment.attributes.values.image_id
+      headers: {
+        'X-CSRF-Token': token
+      }
+
+      url: "/uploads/#{upload_id}"
+
       cache: false
       contentType: false
       processData: false

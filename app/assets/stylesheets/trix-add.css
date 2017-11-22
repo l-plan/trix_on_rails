@@ -1,7 +1,12 @@
-trix-toolbar .trix-button-group button[data-trix-attribute='red']{
-  color: red;
+trix-toolbar .trix-button-group button[data-trix-attribute=grey]{
+  color: grey;
 }
 
 trix-toolbar .trix-button-group button[data-trix-attribute=comic] {
   font-family: "Comic Sans MS";
 }
+
+/*trix-toolbar .trix-button-group button[data-trix-attribute=right] {
+ text-align: "right";
+}
+*/

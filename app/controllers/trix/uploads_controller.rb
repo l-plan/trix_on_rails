@@ -31,6 +31,18 @@ module Trix
 		def index
 		end
 
+		  def destroy
+
+		  	@upload = Trix::Upload.find(params[:id])
+		    @upload.destroy
+		    respond_to do |format|
+		      # format.html { redirect_to uploads_path, notice: 'Upload was successfully destroyed' }
+		      format.json {  head :no_content }
+		      format.html { redirect_to uploads_path, notice: 'Upload was successfully destroyed' }
+    		end
+		  end
+
+
 		private
 
 		def upload_params

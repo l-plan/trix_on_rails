@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20171121151832) do
 
-  create_table "pages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "pages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
     t.string "header"
     t.string "title"
     t.text "page"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20171121151832) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "trix_uploads", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "trix_uploads", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
     t.string "image_file_name"
     t.string "image_content_type"
     t.integer "image_file_size"
