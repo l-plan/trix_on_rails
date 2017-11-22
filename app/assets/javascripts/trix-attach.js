@@ -15,6 +15,8 @@
   });
 
   host = "https://d13txem1unpe48.cloudfront.net/";
+  // host = '/uploads';
+  // xhr.open 'POST', '/uploads', true
 
   uploadAttachment = function(attachment) {
     var file, form, key, xhr;

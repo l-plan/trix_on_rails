@@ -5,3 +5,6 @@ source 'https://rubygems.org'
 # development dependencies will be added by default to the :development group.
 gemspec
 ruby "2.4.2"
+gem 'paperclip'
+gem 'jbuilder'
+

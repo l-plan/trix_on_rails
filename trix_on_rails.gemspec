@@ -23,4 +23,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rails", "~> 5.1"
 
   s.add_development_dependency "mysql2", ">= 0.4.0"
+  s.add_development_dependency "byebug"
 end

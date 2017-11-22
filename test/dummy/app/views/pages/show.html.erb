@@ -12,7 +12,7 @@
 
 <p>
   <strong>Page:</strong>
-  <%= @page.page.html_safe %>
+  <%= sanitize @page.page %>
 </p>
 
 <%= link_to 'Edit', edit_page_path(@page) %> |
