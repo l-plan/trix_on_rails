@@ -13,17 +13,17 @@
 
   <div class="field">
     <%= form.label :header %>
-    <%= form.text_field :header, id: :page_header %>
+    <%= form.text_field :header, id: :page_header , class: 'tmp'%>
   </div>
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_area :title, id: :page_title %>
+    <%= form.text_field :title, id: :page_title , class: 'tmp'%>
   </div>
 
 
   <div>
-  <%= form.text_field :page, id: :page_page %>
+  <%= form.text_area :page, id: :page_page , :size=>"110x10"%>
 </div>
 
   <%#=form.trix_editor :page%>

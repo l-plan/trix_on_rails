@@ -1,14 +1,48 @@
 trix-toolbar .trix-button-group button[data-trix-attribute=grey]{
   color: grey;
+  background-color: #FFF;
+  /*text-align: right;*/
 }
 
-trix-toolbar .trix-button-group button[data-trix-attribute=comic] {
+trix-toolbar .trix-button-group button[data-trix-attribute=right] {
   font-family: "Comic Sans MS";
 }
 grey {
-	color: grey;	
+	color: red;
+	/*float: right;*/
+	/*text-align:right;*/
+	/*display: inline-block;*/
+	   /*position: absolute;*/
+    /*right: 0px;*/
+    /*position: relative;*/
 }
-/*trix-toolbar .trix-button-group button[data-trix-attribute=right] {
- text-align: "right";
+right {
+	/*text-align:right;*/
+/*	float: right;
+	    position: relative;*/
+/*    right: 20px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid #8AC007;*/
+    clear:all;
+	float: right;
+	margin: 10px;
 }
-*/
+body {
+	    margin: 10;
+    padding: 10;
+}
+
+.textWrap{
+	clear:left;
+	float: right;
+	margin: 10px;
+}
+.textWrapLeft{
+	clear: right;
+	float: left;
+	margin: 10px;
+}
+.kleur{
+	color: red;
+}
